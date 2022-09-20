@@ -140,6 +140,12 @@ Exits the program.
 
 Format: `exit`
 
+### Cancel
+Cancels a specified appointment from the specified patient’s appointment list. <br> 
+Format: ```cancel PATIENT_INDEX APPOINTMENT_INDEX```
+- Deletes the appointment with APPOINTMENT_INDEX for the patient at the specified PATIENT_INDEX.
+- The index refers to the index number shown in the displayed appointment list.
+- The indexes must be a positive integer 1, 2, 3, …​
 ### Saving the data
 
 AddressBook data are saved in the hard disk automatically after any command that changes the data. There is no need to save manually.
