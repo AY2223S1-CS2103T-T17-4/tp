@@ -16,6 +16,7 @@ public class ListCommand extends Command {
 
     public static final String MESSAGE_SUCCESS_PATIENTS = "Listed all patients.";
     public static final String MESSAGE_SUCCESS_APPOINTMENTS = "Listed all appointments.";
+    public static final String MESSAGE_SUCCESS_ALL = "Listed all patients and appointments.";
 
     public static final String MESSAGE_USAGE = COMMAND_WORD + " patients: List down all patients.\n"
             + COMMAND_WORD + " appts: List down all appointments.\n";
@@ -29,16 +30,21 @@ public class ListCommand extends Command {
 
     @Override
     public CommandResult execute(Model model) {
+        requireNonNull(model);
         if (this.type.equals("patients")) {
-            requireNonNull(model);
             model.updateFilteredPersonList(PREDICATE_SHOW_ALL_PERSONS);
             HiddenPredicateSingleton.clearHiddenPatients();
             return new CommandResult(MESSAGE_SUCCESS_PATIENTS);
-        } else {
-            requireNonNull(model);
+        } else if (this.type.equals("appts")) {
             model.updateFilteredAppointmentList(PREDICATE_SHOW_ALL_APPOINTMENTS);
             HiddenPredicateSingleton.clearHiddenAppts();
             return new CommandResult(MESSAGE_SUCCESS_APPOINTMENTS);
+        } else {
+            model.updateFilteredPersonList(PREDICATE_SHOW_ALL_PERSONS);
+            HiddenPredicateSingleton.clearHiddenPatients();
+            model.updateFilteredAppointmentList(PREDICATE_SHOW_ALL_APPOINTMENTS);
+            HiddenPredicateSingleton.clearHiddenAppts();
+            return new CommandResult(MESSAGE_SUCCESS_ALL);
         }
     }
 
