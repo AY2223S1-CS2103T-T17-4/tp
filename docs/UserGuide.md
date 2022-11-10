@@ -26,6 +26,7 @@ This table might be useful for you to understand more about what those terms mea
 | **Case-sensitive**         | Difference between upper-case and lower-case letters matters. Therefore, not case-sensitive or case-insensitive means capital and lower-case letters are treated as the same.                                                                          |
 | **Command**                | An instruction typed into a computer for it to carry out.<br/> For example, `add n/John p/12345678`.                                                                                                                                                   |
 | **Integer**                | A whole number.<br/> For example, `1`, `2` or `3` are integers, but `1.99` or `2.3` are not.                                                                                                                                                           |
+
 ## **Icons**
 
 You will see these icons along the way as you are reading the User Guide. Refer to the table below to know what each of them means.
