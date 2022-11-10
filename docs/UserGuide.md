@@ -396,6 +396,7 @@ Format:
 * `ungroup appts`
 
 #### Hiding patients by name or tag: `hide patients`
+Hides patients by the condition specified. <br>
 Hiding a patient will also hide their appointments, thus the resulting appointment list contains only appointments of remaining patients after `hide patients`.
 
 **By name:**
@@ -420,6 +421,7 @@ Examples:
 * `hide patients t/ear t/nose` hides all patients with an ear OR nose tag.
 
 #### Unhiding patients by name or tag: `unhide patients`
+Unhides patients by the condition specified. <br>
 Unhiding a patient will also unhide their appointments, thus the resulting appointment list will also contain appointments of unhidden patients after `unhide patients`.
 
 **By name:**
@@ -495,6 +497,7 @@ After hide: (Appointments that are marked are now hidden)
 ![after_Hide](images/afterHide.png)
 
 #### Unhiding appointments by reason, tag or status: `unhide appts`
+Unhides appointments by the condition specified. <br>
 Unhiding appointments will not change the patient list.
 
 **By reason:**
