@@ -473,7 +473,9 @@ Hides appointments which are marked/unmarked.
 
 Format: `hide appts s/STATUS` <br>
 
+<div markdown="block" class="alert alert-primary">
 **:bulb: Tip:** `marked` status can be shortened to `m`, `unmarked` can be shortened to `um`.
+</div>
 
 Examples:
 * `hide appts s/marked` hides all marked appointments.
