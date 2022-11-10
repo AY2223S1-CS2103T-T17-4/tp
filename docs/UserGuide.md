@@ -552,9 +552,9 @@ The history is looped, meaning that when you reach the last command, the next cy
 </div>
 
 Controls:
-* `Up Arrow` on keyboard: Cycle to next command
-* `Down Arrow` on keyboard: Cycle to previous command
-* `Control` on keyboard: Toggle history
+* <kbd>Up</kbd> arrow key on keyboard: Cycle to next command
+* <kbd>Down</kbd> arrow key on keyboard: Cycle to previous command
+* <kbd>Ctrl</kbd> on keyboard: Toggle history
 
 #### Exiting the program : `exit`
 
@@ -599,5 +599,5 @@ If your changes to the data file makes its format invalid, idENTify will discard
 | **Hide Appointments**     | `hide appts CONDITION` <br> e.g. `hide appts s/marked`                                                                                                                                   |
 | **Unhide Appointments**   | `unhide appts CONDITION` <br> e.g. `unhide appts r/pain`                                                                                                                                 |
 | **Find**                  | `find [n/NAME] [p/PHONE] [e/EMAIL] [a/ADDRESS] [t/PATIENT_TAG]…​ [r/REASON] [ds/DATE_START] [de/DATE_END] [ta/APPOINTMENT_TAG]…​`<br> e.g. `find n/Joshua e/Josh@example.com r/Tinnitus` |
-| **History**               | `Control key` <br> `Arrow keys` <br> e.g. `Up Arrow` key on keyboard                                                                                                                         |
+| **History**               | <kbd>Ctrl</kbd> key <br> Arrow keys <br> e.g. <kbd>Up</kbd> Arrow key on keyboard                                                                                                                         |
 | **Exit**                  | `exit`                                                                                                                                                                                   |
