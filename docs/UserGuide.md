@@ -17,7 +17,8 @@ This table might be useful for you to understand more about what those terms mea
 | **ENT**                    | Stands for **E**ar, **N**ose and **T**hroat. ENT departments of a hospital therefore handle patients whom require medical attention for issues pertaining to ear, nose or throat.                                                                      |
 | **UI**                     | Stands for **U**ser **I**nterface, it is the space where users interact with an application or website. In this case, the window that appears when idENTify is launched is the UI and the user can interact with the application by entering commands. |
 | **GUI**                    | Stands for **G**raphical **U**ser **I**nterface. It is a type of user interface through which users interact with electronic devices via visual indicator representations.                                                                             |
-| **Command Line Interface** | A command-line interface (CLI) is a text-based user interface (UI) used to run programs, manage computer files and interact with the computer.                                                                                                         |
+| **Command Line Interface** | A command-line interface (CLI) is a text-based user interface (UI) used to run programs, manage computer files and interact with the computer.|
+| **OS**                     | Stands for Operating System, it is the low-level software that supports a computer’s basic functions, common ones include Windows, macOS, Linux.|
 | **Parameters**             | A parameter is a kind of variable that is used to pass information or data between functions or procedures in a computer. For example, adding a patient into idENTify requires the name of the patient, and the name is a parameter.                   |
 | **Alphanumeric**           | Text that consists only of letters and numbers. For example, `abc12` is alphanumeric, but `(O_O)` is not.                                                                                                                                              |
 | **Recurring**              | Something that occurs repeatedly or periodically. For example, an appointment that repeats every 7 days is considered recurring.                                                                                                                       |
@@ -27,7 +28,7 @@ This table might be useful for you to understand more about what those terms mea
 | **Integer**                | A whole number. (e.g., 1, 2, 3 are integers, but 1.99, 2.3 are not.)                                                                                                                                                                                   |
 
 ## **Quick Start**
-1. Ensure you have Java `11` or above installed in your Computer.
+1. Ensure you have Java `11` or above installed in your Computer. The installation link for Java `11` can be found [here](https://www.oracle.com/sg/java/technologies/javase/jdk11-archive-downloads.html). Choose the version meant for your computer's OS.
 2. Download the latest `idENTify.jar` from [here](https://github.com/AY2223S1-CS2103T-T17-4/tp/releases/tag/v1.4).
 3. Copy the file to your preferred folder.
 4. Double-click the file to start the app. The GUI similar to the one below should appear in a few seconds. Note how the app contains some sample data.
