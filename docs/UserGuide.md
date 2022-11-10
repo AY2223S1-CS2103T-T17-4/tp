@@ -111,15 +111,14 @@ Component | Purpose
   * **Must only contain integers**, and it should be at least 3 digits long.
 * `EMAIL`
   * Format: `local-part@domain-name`
-  * Follows below constraints:
+  * Follows these constraints:
   * `local-part` must:
     * Contain alphanumeric characters or these special characters: `+`, `_`, `.`, `-`.
-    * Not start or end with any special characters.
+    * Does not start or end with any special characters.
   * `domain-name` must:
     * Be at least 2 characters long.
     * Begin and end with alphanumeric characters.
-    * Have both parts consist of alphanumeric characters, separated only by hyphens (`-`), if any. <br>
-      e.g. `John` will cause an error message: Missing `@` and `domain-name`.
+  
 * `REASON`
   * **Must not be empty**.
 * `DATE` 
