@@ -237,6 +237,13 @@ Examples:
 *  `edit patients 1 p/91234567 e/johndoe@example.com` Edits the phone number and email address of the 1st patient to be `91234567` and `johndoe@example.com` respectively.
 *  `edit patients 2 n/Betsy Crower t/` Edits the name of the 2nd patient to be `Betsy Crower` and clears all existing tags.
 
+Here is a visual example of editing a patient by name.
+
+Before edit name: (Initial name is "Alex Yeoh")
+![before_Edit](images/BeforeEditPatients.png)
+
+After edit name: (Patient and appointment list updated with the new name)
+![after Edit](images/AfterEditPatients.png)
 #### Editing an appointment: `edit appts`
 
 Edits an existing patient's appointment in idENTify.
