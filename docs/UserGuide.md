@@ -26,7 +26,8 @@ This table might be useful for you to understand more about what those terms mea
 | **Case-sensitive**         | Difference between upper-case and lower-case letters matters. Therefore, not case-sensitive or case-insensitive means capital and lower-case letters are treated as the same.                                                                          |
 | **Command**                | An instruction typed into a computer for it to carry out.<br/> For example, `add n/John p/12345678`.                                                                                                                                                   |
 | **Integer**                | A whole number.<br/> For example, `1`, `2` or `3` are integers, but `1.99` or `2.3` are not.                                                                                                                                                           |
-## Icons
+
+## **Icons**
 
 You will see these icons along the way as you are reading the User Guide. Refer to the table below to know what each of them means.
 
@@ -154,14 +155,11 @@ Adds a patient into idENTify.
 
 Format: `add n/NAME p/PHONE_NUMBER [a/ADDRESS] [e/EMAIL] [t/TAG]…​`
 
-<div markdown="block" class="alert alert-primary">
+<div markdown="block" class="alert alert-info">
 
-:information_source: A patient can have up to 3 different tags.
-  
-</div>
-
-<div markdown="span" class="alert alert-warning">:information_source:
- We allow duplicate names for patients, but distinct patients with the same names must have different phone numbers 
+:information_source: <br> **Note:** <br>
+  * A patient can have up to 3 different tags.
+  * We allow duplicate names for patients, but distinct patients with the same names must have different phone numbers 
  in order to identify them. So you cannot add a patient who has both the same name and phone number as some existing patient.
 </div>
 
@@ -195,9 +193,9 @@ Appointments added are sorted according to their date.
 
 Format: `book INDEX r/REASON d/DATE [pe/TIME_PERIOD] [t/TAG]…​`
 
-<div markdown="block" class="alert alert-primary">
+<div markdown="block" class="alert alert-info">
 
-:information_source: An appointment can have up to 3 different tags.
+:information_source: **Note:** An appointment can have up to 3 different tags.
   
 </div>
 
@@ -239,7 +237,7 @@ Format: `edit patients INDEX [n/NAME] [p/PHONE] [e/EMAIL] [a/ADDRESS] [t/TAG]…
 * At least one of the optional parameters must be provided.
 * Existing values will be updated to the input values.
 
-<div markdown="span" class="alert alert-warning">:information_source:
+<div markdown="block" class="alert alert-info">:information_source: **Note:** 
  We allow duplicate names for patients, but distinct patients with the same names must have different phone numbers 
  in order to identify them. So you cannot edit a patient to have both the same name and phone number as some existing patient.
 </div>
@@ -326,9 +324,7 @@ Example:
 
 ### Organisation
 
-<div markdown="span" class="alert alert-info">:information_source:
-
-By default,
+<div markdown="block" class="alert alert-info">:information_source: By default, <br>
 * Patients will be sorted by their names first; if there are people with the same name, they will be sorted by their
   phone numbers.
 * Appointments will be sorted by their dates first; if there are multiple appointments
@@ -351,8 +347,7 @@ Format:
 
 Groups up patients that share the same tag(s). Patients in the same tag group will be sorted automatically by their names in ascending order.
 
-Format:
-* `group patients`
+Format: `group patients`
 
 For example: <br>
 * Patients with no tags will be in the same group.
@@ -380,13 +375,16 @@ For example, after grouping appointments with same tags: <br>
 Appointments in the same group will be sorted automatically by their date and time in ascending order.
 
 
-Format:
-* `group appts k/KEY`
-**:bulb: Tip:** `tag` can be shortened to `t`, `patient` can be shortened to `p`, `mark` can be shortened to `m`
+Format: `group appts k/KEY` <br>
+
 Examples:
 * `group appts k/tag`
 * `group appts k/patient`
-* `group appts k/mark`
+* `group appts k/mark` <br>
+
+<div markdown="block" class="alert alert-primary">
+**:bulb: Tip:** `tag` can be shortened to `t`, `patient` can be shortened to `p`, `mark` can be shortened to `m`
+</div>
 
 #### Ungrouping patients/ appointments : `ungroup`
 
@@ -475,7 +473,9 @@ Hides appointments which are marked/unmarked.
 
 Format: `hide appts s/STATUS` <br>
 
+<div markdown="block" class="alert alert-primary">
 **:bulb: Tip:** `marked` status can be shortened to `m`, `unmarked` can be shortened to `um`.
+</div>
 
 Examples:
 * `hide appts s/marked` hides all marked appointments.
@@ -519,7 +519,9 @@ Unhides hidden appointments which are marked or unmarked.
 
 Format: `unhide appts s/STATUS` <br>
 
+<div markdown="block" class="alert alert-primary">
 **:bulb: Tip:** `marked` status can be shortened to `m`, `unmarked` can be shortened to `um`.
+</div> 
 
 * The status is **NOT** case-sensitive. e.g. `MARKed` will work in the same way as `marked`.
 
@@ -587,14 +589,14 @@ The history is looped, meaning that when you reach the last command, the next cy
 
 * Every new valid command will reset the index back to the top of the history.
 
-* Click Down Arrow to get the most recent command immediately and Up Arrow to get the last command in the history.
+* Click <kbd>&darr;</kbd> key to get the most recent command immediately and <kbd>&uarr;</kbd> key to get the last command in the history.
   
 </div>
 
 Controls:
-* <kbd>Up</kbd> arrow key on keyboard: Cycle to next command
-* <kbd>Down</kbd> arrow key on keyboard: Cycle to previous command
-* <kbd>Ctrl</kbd> on keyboard: Toggle history
+* <kbd>&uarr;</kbd> key on keyboard: Cycle to next command
+* <kbd>&darr;</kbd> key on keyboard: Cycle to previous command
+* <kbd>Ctrl</kbd> key on keyboard: Toggle history
 
 #### Exiting the program : `exit`
 
@@ -639,5 +641,5 @@ If your changes to the data file makes its format invalid, idENTify will discard
 | **Hide Appointments**     | `hide appts CONDITION` <br> e.g. `hide appts s/marked`                                                                                                                                   |
 | **Unhide Appointments**   | `unhide appts CONDITION` <br> e.g. `unhide appts r/pain`                                                                                                                                 |
 | **Find**                  | `find [n/NAME] [p/PHONE] [e/EMAIL] [a/ADDRESS] [t/PATIENT_TAG]…​ [r/REASON] [ds/DATE_START] [de/DATE_END] [ta/APPOINTMENT_TAG]…​`<br> e.g. `find n/Joshua e/Josh@example.com r/Tinnitus` |
-| **History**               | <kbd>Ctrl</kbd> key <br> Arrow keys <br> e.g. <kbd>Up</kbd> Arrow key on keyboard                                                                                                                         |
+| **History**               | <kbd>Ctrl</kbd> key <br> Arrow keys <br> e.g. <kbd>&uarr;</kbd> key on keyboard                                                                                                                         |
 | **Exit**                  | `exit`                                                                                                                                                                                   |
