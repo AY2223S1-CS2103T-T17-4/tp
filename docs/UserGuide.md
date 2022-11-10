@@ -565,7 +565,9 @@ Other Examples:
 #### View History/Cycling of Commands
 
 Shows the most recent 10 commands that was inputted.
+
 Allows cycling through those commands to reduce the need of retyping similar commands fully.
+
 The history is looped, meaning that when you reach the last command, the next cycle will bring it back to the first command.
 
 <div markdown="block" class="alert alert-primary">
