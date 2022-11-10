@@ -141,9 +141,7 @@ Format: `help`
 #### Adding a patient: `add`
 
 Adds a patient into idENTify.
-* We allow duplicate names for patients, but distinct patients with the same
-  names must have different phone numbers in order to identify them. So you cannot add a patient who has both the
-  same name and phone number as some existing patient.
+
 
 Format: `add n/NAME p/PHONE_NUMBER [a/ADDRESS] [e/EMAIL] [t/TAG]…​`
 
@@ -151,6 +149,11 @@ Format: `add n/NAME p/PHONE_NUMBER [a/ADDRESS] [e/EMAIL] [t/TAG]…​`
 
 :information_source: A patient can have up to 3 different tags.
   
+</div>
+
+<div markdown="span" class="alert alert-warning">:exclamation: **Caution:**
+ We allow duplicate names for patients, but distinct patients with the same names must have different phone numbers 
+ in order to identify them. So you cannot add a patient who has both the same name and phone number as some existing patient.
 </div>
 
 Examples:
@@ -226,12 +229,17 @@ Format: `edit patients INDEX [n/NAME] [p/PHONE] [e/EMAIL] [a/ADDRESS] [t/TAG]…
 * Edits the patient at the specified `INDEX`. The index refers to the index number shown in the displayed patient list. The index **must be a positive integer** 1, 2, 3, …​
 * At least one of the optional parameters must be provided.
 * Existing values will be updated to the input values.
-* When editing tags, the existing tags of the patient will be removed i.e. adding of tags is not cumulative.
-* You can remove all the patient’s tags by typing `t/` without
-    specifying any tags after it.
-* We allow duplicate names for patients, but distinct patients with the same
-    names must have different phone numbers in order to identify them. So you cannot edit a patient to have both the
-  same name and phone number as some existing patient.
+
+<div markdown="block" class="alert alert-primary">
+  :bulb: **Tip:** You can remove all the patient’s tags by typing `t/` without specifying any tags after it. 
+</div>
+
+<div markdown="span" class="alert alert-warning">:exclamation: <br>
+ **Caution:**
+ * We allow duplicate names for patients, but distinct patients with the same names must have different phone numbers 
+   in order to identify them. So you cannot edit a patient to have both the same name and phone number as some existing patient.
+ * When editing tags, the existing tags of the patient will be removed i.e. adding of tags is not cumulative.
+</div>
 
 Examples:
 *  `edit patients 1 p/91234567 e/johndoe@example.com` Edits the phone number and email address of the 1st patient to be `91234567` and `johndoe@example.com` respectively.
