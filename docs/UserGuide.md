@@ -330,7 +330,7 @@ Appointments in the same group will be sorted automatically by their datetime in
 
 Format:
 * `group appts k/KEY`
-**:bulb: Tip:** `marked` status can be shortened to `m`, `unmarked` can be shortened to `um`.
+**:bulb: Tip:** `tag` can be shortened to `t`, `patient` can be shortened to `p`, `mark` can be shortened to `m`
 Examples:
 * `group appts k/tag`
 * `group appts k/patient`
