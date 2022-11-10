@@ -332,9 +332,9 @@ By default,
   phone numbers.
 * Appointments will be sorted by their dates first; if there are multiple appointments
   with the same date, they will be sorted by their attached patients' information.
-</div>
 
 However, with the commands in this section, you will be able to modify how entries in idENTify are presented.
+</div>
 
 #### Listing all patients/appointments : `list`
 
