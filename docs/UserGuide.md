@@ -347,8 +347,8 @@ Format: `group patients`
 
 For example: <br>
 * Patients with no tags will be in the same group.
-* Patients with only 'ear' tag will be in the same group.
-* Patients with both 'ear' and 'nose' tags will be in the same group.
+* Patients with only `ear` tag will be in the same group.
+* Patients with both `ear` and `nose` tags will be in the same group.
 
 Visual example of hiding appointments by marked (completed) status:
 
@@ -365,8 +365,8 @@ Groups up appointments that share a similar criteria.
 For example, after grouping appointments with same tags: <br>
 
 * Appointments with no tags will be in the same group.
-* Appointments with only 'ear' tag will be in the same group.
-* Appointments with both 'ear' and 'nose' tags will be in the same group.
+* Appointments with only `ear` tag will be in the same group.
+* Appointments with both `ear` and `nose` tags will be in the same group.
 
 Appointments in the same group will be sorted automatically by their date and time in ascending order.
 
