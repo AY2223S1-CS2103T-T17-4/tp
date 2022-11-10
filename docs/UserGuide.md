@@ -157,7 +157,7 @@ Format: `add n/NAME p/PHONE_NUMBER [a/ADDRESS] [e/EMAIL] [t/TAG]…​`
 
 <div markdown="block" class="alert alert-primary">
 
-:information_source: <br>
+:information_source: <br> **Notes:** <br>
   * A patient can have up to 3 different tags.
   * We allow duplicate names for patients, but distinct patients with the same names must have different phone numbers 
  in order to identify them. So you cannot add a patient who has both the same name and phone number as some existing patient.
@@ -195,7 +195,7 @@ Format: `book INDEX r/REASON d/DATE [pe/TIME_PERIOD] [t/TAG]…​`
 
 <div markdown="block" class="alert alert-primary">
 
-:information_source: An appointment can have up to 3 different tags.
+:information_source: **Note:** An appointment can have up to 3 different tags.
   
 </div>
 
@@ -237,7 +237,7 @@ Format: `edit patients INDEX [n/NAME] [p/PHONE] [e/EMAIL] [a/ADDRESS] [t/TAG]…
 * At least one of the optional parameters must be provided.
 * Existing values will be updated to the input values.
 
-<div markdown="block" class="alert alert-primary">:information_source:
+<div markdown="block" class="alert alert-primary">:information_source: **Note:** 
  We allow duplicate names for patients, but distinct patients with the same names must have different phone numbers 
  in order to identify them. So you cannot edit a patient to have both the same name and phone number as some existing patient.
 </div>
