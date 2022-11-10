@@ -274,8 +274,16 @@ Format: `mark APPOINTMENT_INDEX`
 * `APPOINTMENT_INDEX` refers to the index number of the appointment to be marked, as shown in the appointment list.
 * `APPOINTMENT_INDEX` **must be a positive integer** 1, 2, 3, …​
 
-Example:
-* `mark 3`
+Visual example of marking a recurring appointment, using `mark 1`:
+
+Before `mark 1`:
+
+![before `mark 1`](images/MarkBefore.png)
+
+
+After `mark 1`:
+
+![after `mark 1`](images/MarkAfter.png)
 
 #### Unmark an appointment as incomplete:  `unmark`
 
