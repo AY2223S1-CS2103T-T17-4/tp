@@ -587,14 +587,14 @@ The history is looped, meaning that when you reach the last command, the next cy
 
 * Every new valid command will reset the index back to the top of the history.
 
-* Click Down Arrow to get the most recent command immediately and Up Arrow to get the last command in the history.
+* Click <kbd>&darr;</kbd> key to get the most recent command immediately and <kbd>&uarr;</kbd> key to get the last command in the history.
   
 </div>
 
 Controls:
-* <kbd>Up</kbd> arrow key on keyboard: Cycle to next command
-* <kbd>Down</kbd> arrow key on keyboard: Cycle to previous command
-* <kbd>Ctrl</kbd> on keyboard: Toggle history
+* <kbd>&uarr;</kbd> key on keyboard: Cycle to next command
+* <kbd>&darr;</kbd> key on keyboard: Cycle to previous command
+* <kbd>Ctrl</kbd> key on keyboard: Toggle history
 
 #### Exiting the program : `exit`
 
@@ -639,5 +639,5 @@ If your changes to the data file makes its format invalid, idENTify will discard
 | **Hide Appointments**     | `hide appts CONDITION` <br> e.g. `hide appts s/marked`                                                                                                                                   |
 | **Unhide Appointments**   | `unhide appts CONDITION` <br> e.g. `unhide appts r/pain`                                                                                                                                 |
 | **Find**                  | `find [n/NAME] [p/PHONE] [e/EMAIL] [a/ADDRESS] [t/PATIENT_TAG]…​ [r/REASON] [ds/DATE_START] [de/DATE_END] [ta/APPOINTMENT_TAG]…​`<br> e.g. `find n/Joshua e/Josh@example.com r/Tinnitus` |
-| **History**               | <kbd>Ctrl</kbd> key <br> Arrow keys <br> e.g. <kbd>Up</kbd> Arrow key on keyboard                                                                                                                         |
+| **History**               | <kbd>Ctrl</kbd> key <br> Arrow keys <br> e.g. <kbd>&uarr;</kbd> key on keyboard                                                                                                                         |
 | **Exit**                  | `exit`                                                                                                                                                                                   |
