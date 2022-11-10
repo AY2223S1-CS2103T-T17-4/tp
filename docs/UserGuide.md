@@ -156,12 +156,9 @@ Format: `add n/NAME p/PHONE_NUMBER [a/ADDRESS] [e/EMAIL] [t/TAG]…​`
 
 <div markdown="block" class="alert alert-primary">
 
-:information_source: A patient can have up to 3 different tags.
-  
-</div>
-
-<div markdown="span" class="alert alert-warning">:information_source:
- We allow duplicate names for patients, but distinct patients with the same names must have different phone numbers 
+:information_source: <br>
+  * A patient can have up to 3 different tags.
+  * We allow duplicate names for patients, but distinct patients with the same names must have different phone numbers 
  in order to identify them. So you cannot add a patient who has both the same name and phone number as some existing patient.
 </div>
 
@@ -239,7 +236,7 @@ Format: `edit patients INDEX [n/NAME] [p/PHONE] [e/EMAIL] [a/ADDRESS] [t/TAG]…
 * At least one of the optional parameters must be provided.
 * Existing values will be updated to the input values.
 
-<div markdown="span" class="alert alert-warning">:information_source:
+<div markdown="block" class="alert alert-primary">:information_source:
  We allow duplicate names for patients, but distinct patients with the same names must have different phone numbers 
  in order to identify them. So you cannot edit a patient to have both the same name and phone number as some existing patient.
 </div>
