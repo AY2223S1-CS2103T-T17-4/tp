@@ -482,24 +482,21 @@ Format: `find [n/NAME] [p/PHONE] [e/EMAIL] [a/ADDRESS] [t/PATIENT_TAG]…​ [r/
 
 * At least 1 of the optional parameters must be provided.
 * The search is **NOT** case-sensitive. e.g `n/hans` has same effect as `n/Hans`
-* All parameters, unless otherwise stated, support *partial match*.
-  * *Partial match*: searching `John Do` matches `John Doe`
-  * *Full match*: Only `John Doe` matches `John Doe`.
 * Only *relevant* patients and appointments that satisfies all parameters will be displayed.
   * View the `find r/Checkup` example below for a visual explanation.
 * Additional details on each parameter are listed in the tables below.
 
 | Patient Related Parameters                                           | Additional Notes                                                                       |
 |----------------------------------------------------------------------|----------------------------------------------------------------------------------------|
-| **[n/NAME]**<br/>**[p/PHONE]**<br/>**[e/EMAIL]**<br/>**[a/ADDRESS]** | -                                                                                      |
-| **[t/PATIENT_TAG]...**                                               | Finds patients with all the inputted tag(s).<br/>**Full match for each tag required.** |
+| **[n/NAME]**<br/>**[p/PHONE]**<br/>**[e/EMAIL]**<br/>**[a/ADDRESS]** | ***Partial match* required**.<br/>e.g. searching `John Do` matches `John Doe`          |
+| **[t/PATIENT_TAG]...**                                               | Finds patients with all the inputted tag(s).<br/>***Full match* for each tag required.**<br> e.g. Only `Ear` matches `Ear`. `Ea` does not match `Ear`. |
 
 | Appointment Related Parameters | Additional Notes                                                                                                                 |
 |--------------------------------|----------------------------------------------------------------------------------------------------------------------------------|
-| **[r/REASON]**                 | -                                                                                                                                |
-| **[ds/DATE_START]**            | Finds appointments occurring **at or after** the inputted date. <br/> **Date must be at or before [de/DATE_END], if present.**    |
+| **[r/REASON]**                 | ***Partial match* required**.                                                                                                    |
+| **[ds/DATE_START]**            | Finds appointments occurring **at or after** the inputted date. <br/> **Date must be at or before [de/DATE_END], if present.**   |
 | **[de/DATE_END]**              | Finds appointments occurring **at or before** the inputted date. <br/> **Date must be at or after [de/DATE_START], if present.** |
-| **[ta/APPOINTMENT_TAG]...**    | Finds appointments with all the inputted appointment tag(s).<br/> **Full match for each tag required.**                          |
+| **[ta/APPOINTMENT_TAG]...**    | Finds appointments with all the inputted appointment tag(s).<br/> ***Full match* for each tag required.**                          |
 
 Visual example of finding results by an appointment's reason, using `find r/Checkup`:
 
