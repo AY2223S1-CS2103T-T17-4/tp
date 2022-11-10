@@ -326,13 +326,14 @@ Example:
 
 <div markdown="span" class="alert alert-warning">:information_source:
 By default,
+
 * Patients will be sorted by their names first; if there are people with the same name, they will be sorted by their
   phone numbers.
 * Appointments will be sorted by their dates first; if there are multiple appointments
   with the same date, they will be sorted by their attached patients' information.
-</div>
 
 However, with the commands in this section, you will be able to modify how entries in idENTify are presented.
+</div>
 
 #### Listing all patients/appointments : `list`
 
