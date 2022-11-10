@@ -315,10 +315,10 @@ For example: <br>
 
 Visual example of hiding appointments by marked (completed) status:
 
-Before hide: (Initially with marked appointments)
+Before group: (Initially patients are sorted by their names)
 ![before_Group](images/beforeGroup.png)
 
-After hide: (Appointments that are marked are now hidden)
+After group: (Patients sharing the same tags that are now grouped together)
 ![after_Group](images/afterGroup.png)
 
 #### Grouping appointments : `group appts`
