@@ -252,10 +252,10 @@ Examples:
 
 Here is a visual example of editing a patient by name.
 
-Before edit name: (Initial name is "Alex Yeoh")
+Before edit name: (Initial name is "Alex Yeoh") <br>
 ![before_Edit](images/BeforeEditPatients.png)
 
-After edit name: (Patient and appointment list updated with the new name)
+After edit name: (Patient and appointment list updated with the new name) <br>
 ![after Edit](images/AfterEditPatients.png)
 #### Editing an appointment: `edit appts`
 
@@ -483,10 +483,10 @@ Examples:
 
 Visual example of hiding appointments by marked (completed) status:
 
-Before hide: (Initially with marked appointments)
+Before hide: (Initially with marked appointments) <br>
 ![before_Hide](images/beforeHide.png)
 
-After hide: (Appointments that are marked are now hidden)
+After hide: (Appointments that are marked are now hidden) <br>
 ![after_Hide](images/afterHide.png)
 
 #### Unhiding appointments by reason, tag or status: `unhide appts`
