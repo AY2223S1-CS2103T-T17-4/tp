@@ -324,9 +324,7 @@ Example:
 
 ### Organisation
 
-<div markdown="block" class="alert alert-info">:information_source:
-
-By default, <br>
+<div markdown="block" class="alert alert-info">:information_source: By default, <br>
 * Patients will be sorted by their names first; if there are people with the same name, they will be sorted by their
   phone numbers.
 * Appointments will be sorted by their dates first; if there are multiple appointments
