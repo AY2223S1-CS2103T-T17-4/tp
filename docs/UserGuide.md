@@ -42,6 +42,8 @@ You will see these icons along the way as you are reading the User Guide. Refer 
 2. Download the latest `idENTify.jar` from [here](https://github.com/AY2223S1-CS2103T-T17-4/tp/releases/tag/v1.4).
 3. Copy the file to the folder you want to use as the _home folder_ for your idENTify.
 4. Double-click the file to start the app. The GUI similar to the one below should appear in a few seconds. Note how the app contains some sample data.
+<br>
+
 ![start_up](images/StartingUI.png)
 
 ## **UI Components**
