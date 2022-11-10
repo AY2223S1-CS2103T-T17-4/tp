@@ -35,7 +35,7 @@ You will see these icons along the way as you are reading the User Guide. Refer 
 |:--------------------:|----------------------------------------------------------------------------------|
 | :information_source: | Background information                                                           |
 |        :bulb:        | Helpful/bonus information to use idENTify more effectively                       |
-|    :exclamation:     | Cautionary information to prevent errors                                         |
+|    :exclamation:     | Cautionary information to prevent errors or unintended results                   |
 
 ## **Quick Start**
 1. Ensure you have Java `11` or above installed in your Computer. The installation link for Java `11` can be found [here](https://www.oracle.com/sg/java/technologies/javase/jdk11-archive-downloads.html). Choose the version meant for your computer's OS.
