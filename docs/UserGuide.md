@@ -154,7 +154,7 @@ Adds a patient into idENTify.
 
 Format: `add n/NAME p/PHONE_NUMBER [a/ADDRESS] [e/EMAIL] [t/TAG]…​`
 
-<div markdown="block" class="alert alert-info">
+<div markdown="block" class="alert alert-primary">
 
 :information_source: A patient can have up to 3 different tags.
   
@@ -326,8 +326,9 @@ Example:
 
 ### Organisation
 
-<div markdown="span" class="alert alert-info">:information_source: By default, <br>
+<div markdown="span" class="alert alert-info">:information_source:
 
+By default,
 * Patients will be sorted by their names first; if there are people with the same name, they will be sorted by their
   phone numbers.
 * Appointments will be sorted by their dates first; if there are multiple appointments
@@ -581,7 +582,7 @@ Allows cycling through those commands to reduce the need of retyping similar com
 
 The history is looped, meaning that when you reach the last command, the next cycle will bring it back to the first command.
 
-<div markdown="block" class="alert alert-info">
+<div markdown="block" class="alert alert-primary">
 :bulb: **Tip:** <br>
 
 * Every new valid command will reset the index back to the top of the history.
