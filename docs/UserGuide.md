@@ -495,7 +495,7 @@ Format: `find [n/NAME] [p/PHONE] [e/EMAIL] [a/ADDRESS] [t/PATIENT_TAG]…​ [r/
 | Appointment Related Parameters | Additional Notes                                                                                                                 |
 |--------------------------------|----------------------------------------------------------------------------------------------------------------------------------|
 | **[r/REASON]**                 | -                                                                                                                                |
-| **[ds/DATE_START]**            | Finds appointments occurring **at or after** the inputted date. <br/> **Date must be at or after [de/DATE_END], if present.**    |
+| **[ds/DATE_START]**            | Finds appointments occurring **at or after** the inputted date. <br/> **Date must be at or before [de/DATE_END], if present.**    |
 | **[de/DATE_END]**              | Finds appointments occurring **at or before** the inputted date. <br/> **Date must be at or after [de/DATE_START], if present.** |
 | **[ta/APPOINTMENT_TAG]...**    | Finds appointments with all the inputted appointment tag(s).<br/> **Full match for each tag required.**                          |
 
