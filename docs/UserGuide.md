@@ -408,6 +408,7 @@ Examples:
 * `hide patients n/John` hides `john` and `John Doe`
 * `hide patients n/alex n/david` hides `Alex Yeoh`, `David Li`<br>
 
+
 **By tag:**
 Hides patients that contain any of the given tags.
 
@@ -430,6 +431,7 @@ Format: `unhide patients n/NAME [n/MORE_NAMES]...`
 Examples:
 * `unhide patients n/John` unhides `john` and `John Doe`
 * `unhide patients n/alex n/david` unhides `Alex Yeoh`, `David Li`<br>
+
 
 **By tag:**
 Unhides patients that were previously hidden that contain any of the given tags.
@@ -458,6 +460,7 @@ Examples:
 * `hide appts r/nose` hides all appointments with "nose" in the reason.
 * `hide appts r/pain r/issue` hides all appointments with "pain" or "issue" in the reason.
 
+
 **By tag:**
 Hides appointments which contain any of the given tags.
 
@@ -467,6 +470,7 @@ Format: `hide appts t/TAG [t/MORE_TAGS]...`
 
 Examples:
 * `hide appts t/ear t/nose` hides all appointments with a ear OR nose tag.
+
 
 **By marked/unmarked status:**
 Hides appointments which are marked/unmarked.
@@ -503,6 +507,7 @@ Examples:
 * `unhide appts r/pain` unhides all hidden appointments with "pain" as part of the reason.
 * `unhide appts r/pain r/problem` unhides all hidden appointments with "pain" or "problem" as part of the reason.
 
+
 **By tag:**
 Unhides hidden appointments that contains `TAG` (OR `MORE_TAGS`).
 
@@ -513,6 +518,7 @@ Format: `unhide appts t/TAG [t/MORE_TAGS]...`
 
 Examples:
 * `unhide appts t/nose t/ear` unhides all appointments with a nose OR ear tag.
+
 
 **By marked/unmarked status:**
 Unhides hidden appointments which are marked or unmarked.
