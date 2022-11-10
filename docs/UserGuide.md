@@ -331,7 +331,7 @@ For example, after grouping appointments with same tags: <br>
 * Appointments with only 'ear' tag will be in the same group.
 * Appointments with both 'ear' and 'nose' tags will be in the same group.
 
-Appointments in the same group will be sorted automatically by their datetime in ascending order.
+Appointments in the same group will be sorted automatically by their date and time in ascending order.
 
 
 Format:
@@ -346,7 +346,7 @@ Examples:
 
 Ungroups the list of patients or appointments. \
 Patient entries will return to being sorted by name in alphabetical order. \
-Appointment entries will return to being sorted by datetime.
+Appointment entries will return to being sorted by date and time.
 
 Format:
 * `ungroup patients`
