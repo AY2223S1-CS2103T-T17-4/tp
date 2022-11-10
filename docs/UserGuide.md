@@ -349,7 +349,8 @@ Format:
 
 Groups up patients that share the same tag(s). Patients in the same tag group will be sorted automatically by their names in ascending order.
 
-Format: `group patients`
+Format:
+* `group patients`
 
 For example: <br>
 * Patients with no tags will be in the same group.
@@ -377,16 +378,15 @@ For example, after grouping appointments with same tags: <br>
 Appointments in the same group will be sorted automatically by their date and time in ascending order.
 
 
-Format: `group appts k/KEY`
-
-<div markdown="block" class="alert alert-primary">
-**:bulb: Tip:** `tag` can be shortened to `t`, `patient` can be shortened to `p`, `mark` can be shortened to `m`
-</div> 
+Format:
+* `group appts k/KEY` <br>
 
 Examples:
 * `group appts k/tag`
 * `group appts k/patient`
-* `group appts k/mark`
+* `group appts k/mark` <br>
+
+**:bulb: Tip:** `tag` can be shortened to `t`, `patient` can be shortened to `p`, `mark` can be shortened to `m`
 
 #### Ungrouping patients/ appointments : `ungroup`
 
@@ -475,9 +475,7 @@ Hides appointments which are marked/unmarked.
 
 Format: `hide appts s/STATUS` <br>
 
-<div markdown="block" class="alert alert-primary">
 **:bulb: Tip:** `marked` status can be shortened to `m`, `unmarked` can be shortened to `um`.
-</div>
 
 Examples:
 * `hide appts s/marked` hides all marked appointments.
@@ -521,9 +519,7 @@ Unhides hidden appointments which are marked or unmarked.
 
 Format: `unhide appts s/STATUS` <br>
 
-<div markdown="block" class="alert alert-primary">
 **:bulb: Tip:** `marked` status can be shortened to `m`, `unmarked` can be shortened to `um`.
- </div>
 
 * The status is **NOT** case-sensitive. e.g. `MARKed` will work in the same way as `marked`.
 
