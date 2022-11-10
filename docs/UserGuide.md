@@ -149,7 +149,7 @@ Format: `add n/NAME p/PHONE_NUMBER [a/ADDRESS] [e/EMAIL] [t/TAG]…​`
 
 <div markdown="block" class="alert alert-primary">
 
-**:bulb: Tip:** A patient can have up to 3 different tags.
+:information_source: A patient can have up to 3 different tags.
   
 </div>
 
@@ -185,7 +185,7 @@ Format: `book INDEX r/REASON d/DATE [pe/TIME_PERIOD] [t/TAG]…​`
 
 <div markdown="block" class="alert alert-primary">
 
-**:bulb: Tip:** An appointment can have up to 3 different tags.
+:information_source: An appointment can have up to 3 different tags.
   
 </div>
 
@@ -253,9 +253,17 @@ Format: `edit appts INDEX [r/REASON] [d/DATE] [pe/TIME_PERIOD] [t/TAG]…​`
 * Edits the appointment at the specified `INDEX`. The index refers to the index number shown in the displayed appointment list. The index **must be a positive integer** 1, 2, 3, …​
 * At least one of the optional parameters must be provided.
 * Existing values will be updated to the input values.
-* When editing tags, the existing tags of the appointment will be removed i.e. adding of tags is not cumulative.
-* You can remove all the appointment’s tags by typing `t/` without specifying any tags after it. 
-* You can set the appointment to be non-recurring by typing `pe/` without specifying any values after it. 
+
+<div markdown="block" class="alert alert-primary">
+  :bulb: **Tip:** <br>
+  * You can remove all the appointment’s tags by typing `t/` without specifying any tags after it. 
+  * You can set the appointment to be non-recurring by typing `pe/` without specifying any values after it.  
+  
+</div>
+
+<div markdown="span" class="alert alert-warning">:exclamation: **Caution:**
+When editing tags, the existing tags of the appointment will be removed i.e. adding of tags is not cumulative.
+</div>
 
 Examples:
 * `edit appts 1 r/Cough d/2022-12-10 16:30` Edits the reason and date of the first appointment to be `Cough` and `2022-12-10 16:30`
