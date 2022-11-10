@@ -155,7 +155,7 @@ Adds a patient into idENTify.
 
 Format: `add n/NAME p/PHONE_NUMBER [a/ADDRESS] [e/EMAIL] [t/TAG]…​`
 
-<div markdown="block" class="alert alert-primary">
+<div markdown="block" class="alert alert-info">
 
 :information_source: <br> **Note:** <br>
   * A patient can have up to 3 different tags.
@@ -193,7 +193,7 @@ Appointments added are sorted according to their date.
 
 Format: `book INDEX r/REASON d/DATE [pe/TIME_PERIOD] [t/TAG]…​`
 
-<div markdown="block" class="alert alert-primary">
+<div markdown="block" class="alert alert-info">
 
 :information_source: **Note:** An appointment can have up to 3 different tags.
   
@@ -237,7 +237,7 @@ Format: `edit patients INDEX [n/NAME] [p/PHONE] [e/EMAIL] [a/ADDRESS] [t/TAG]…
 * At least one of the optional parameters must be provided.
 * Existing values will be updated to the input values.
 
-<div markdown="block" class="alert alert-primary">:information_source: **Note:** 
+<div markdown="block" class="alert alert-info">:information_source: **Note:** 
  We allow duplicate names for patients, but distinct patients with the same names must have different phone numbers 
  in order to identify them. So you cannot edit a patient to have both the same name and phone number as some existing patient.
 </div>
@@ -324,7 +324,7 @@ Example:
 
 ### Organisation
 
-<div markdown="span" class="alert alert-info">:information_source:
+<div markdown="block" class="alert alert-info">:information_source:
 
 By default,
 * Patients will be sorted by their names first; if there are people with the same name, they will be sorted by their
@@ -349,8 +349,7 @@ Format:
 
 Groups up patients that share the same tag(s). Patients in the same tag group will be sorted automatically by their names in ascending order.
 
-Format:
-* `group patients`
+Format: `group patients`
 
 For example: <br>
 * Patients with no tags will be in the same group.
@@ -378,15 +377,16 @@ For example, after grouping appointments with same tags: <br>
 Appointments in the same group will be sorted automatically by their date and time in ascending order.
 
 
-Format:
-* `group appts k/KEY` <br>
+Format: `group appts k/KEY` <br>
 
 Examples:
 * `group appts k/tag`
 * `group appts k/patient`
 * `group appts k/mark` <br>
 
+<div markdown="block" class="alert alert-primary">
 **:bulb: Tip:** `tag` can be shortened to `t`, `patient` can be shortened to `p`, `mark` can be shortened to `m`
+</div>
 
 #### Ungrouping patients/ appointments : `ungroup`
 
@@ -519,7 +519,9 @@ Unhides hidden appointments which are marked or unmarked.
 
 Format: `unhide appts s/STATUS` <br>
 
+<div markdown="block" class="alert alert-primary">
 **:bulb: Tip:** `marked` status can be shortened to `m`, `unmarked` can be shortened to `um`.
+</div> 
 
 * The status is **NOT** case-sensitive. e.g. `MARKed` will work in the same way as `marked`.
 
