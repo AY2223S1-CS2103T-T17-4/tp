@@ -80,7 +80,7 @@ Component | Purpose
 **:information_source: Notes about the command format:**<br>
 
 * Words in `UPPER_CASE` are the parameters to be supplied by the user.<br>
-  e.g. in `add n/NAME`, `NAME` is a parameter which can be used as `add n/John Doe`.
+  e.g. In `add n/NAME`, `NAME` is a parameter which can be used as `add n/John Doe`.
 
 * Items in square brackets are optional.<br>
   e.g. `n/NAME [t/TAG]` can be used as `n/John Doe t/nose` or as `n/John Doe`.
@@ -91,10 +91,10 @@ Component | Purpose
 * Parameters can be in any order.
   
 * If a parameter is expected only once in the command, but you specified it multiple times, only the last occurrence of the parameter will be taken.<br>
-  e.g. if you specify `p/12341234 p/56785678`, only `p/56785678` will be taken.
+  e.g. If you specify `p/12341234 p/56785678`, only `p/56785678` will be taken.
 
 * Extraneous parameters for commands that do not take in parameters (e.g. `help`, `exit` and `clear`) will be ignored.<br>
-  e.g. if the command specifies `help 123`, it will be interpreted as `help`.
+  e.g. If the command specifies `help 123`, it will be interpreted as `help`.
 
 </div>
 
@@ -547,9 +547,9 @@ Format: `find [n/NAME] [p/PHONE] [e/EMAIL] [a/ADDRESS] [t/PATIENT_TAG]…​ [r/
   * View the `find r/Checkup` example below for a visual explanation.
 * Additional details on each parameter are listed in the tables below.
 
-| Patient Related Parameters                                           | Additional Notes                                                                       |
-|----------------------------------------------------------------------|----------------------------------------------------------------------------------------|
-| **[n/NAME]**<br/>**[p/PHONE]**<br/>**[e/EMAIL]**<br/>**[a/ADDRESS]** | ***Partial match* required**.<br/>e.g. searching `John Do` matches `John Doe`          |
+| Patient Related Parameters                                           | Additional Notes                                                                                                                                       |
+|----------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **[n/NAME]**<br/>**[p/PHONE]**<br/>**[e/EMAIL]**<br/>**[a/ADDRESS]** | ***Partial match* required**.<br/>e.g. Searching `John Do` matches `John Doe`                                                                          |
 | **[t/PATIENT_TAG]...**                                               | Finds patients with all the inputted tag(s).<br/>***Full match* for each tag required.**<br> e.g. Only `Ear` matches `Ear`. `Ea` does not match `Ear`. |
 
 | Appointment Related Parameters | Additional Notes                                                                                                                 |
