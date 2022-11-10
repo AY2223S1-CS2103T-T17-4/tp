@@ -111,7 +111,6 @@ Component | Purpose
   * **Must only contain integers**, and it should be at least 3 digits long.
 * `EMAIL`
   * Format: `local-part@domain-name`
-  * Follows these constraints:
   * `local-part` must:
     * Contain alphanumeric characters or these special characters: `+`, `_`, `.`, `-`.
     * Does not start or end with any special characters.
