@@ -303,17 +303,23 @@ Format:
 
 #### Grouping patients : `group patients`
 
-Groups up patients that share the same tag(s).
+Groups up patients that share the same tag(s). Patients in the same tag group will be sorted automatically by their names in ascending order.
+
+Format:
+* `group patients`
 
 For example: <br>
 * Patients with no tags will be in the same group.
 * Patients with only 'ear' tag will be in the same group.
 * Patients with both 'ear' and 'nose' tags will be in the same group.
 
-Patients in the same tag group will be sorted automatically by their names in ascending order.
+Visual example of hiding appointments by marked (completed) status:
 
-Format:
-* `group patients`
+Before hide: (Initially with marked appointments)
+![before_Group](images/beforeGroup.png)
+
+After hide: (Appointments that are marked are now hidden)
+![after_Group](images/afterGroup.png)
 
 #### Grouping appointments : `group appts`
 
