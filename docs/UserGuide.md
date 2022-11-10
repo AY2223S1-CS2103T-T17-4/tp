@@ -157,7 +157,7 @@ Format: `add n/NAME p/PHONE_NUMBER [a/ADDRESS] [e/EMAIL] [t/TAG]…​`
 
 <div markdown="block" class="alert alert-primary">
 
-:information_source: <br> **Notes:** <br>
+:information_source: <br> **Note:** <br>
   * A patient can have up to 3 different tags.
   * We allow duplicate names for patients, but distinct patients with the same names must have different phone numbers 
  in order to identify them. So you cannot add a patient who has both the same name and phone number as some existing patient.
